@@ -1,6 +1,7 @@
-// Js File hear 
+// login button functionality 
 
-
-
-
-console.log("This is Dom Full Project");
+document.getElementById('loginButton').addEventListener('click', function(e){
+    e.preventDefault();
+    console.log('Login button clicked');
+    console.log(e);
+});
