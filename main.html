@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- exteernal link hear  -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- font awsamee cdn  -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+<body class="bg-[#f2f2f3] h-[100vh]  justify-center">
+    <div class=" min-h-[50px] max-w-lg mx-auto flex justify-between items-center p-3 border-b-1 border-gray-400">
+            <div class="leaeft-div flex items-center">
+                <img class="h-[50px]" src="img/Group.png" alt="">
+                <div>
+                    <h2 class="font-semibold">$ <span>50000</span></h2>
+                    <p class=" text-[#08080880]">Available Balance</p>
+                </div>
+
+            </div>
+            <div class="log-out-button">
+                <button class="btn text-[#08080880]"> <i class="fa-solid fa-arrow-right-from-bracket rotate-180 text-gray-700"></i>Log Out</button>
+`
+            </div>
+
+    </div>
+     
+        <div class="bg-[#fbfbfb] p-2   max-w-lg mx-auto rounded-sm rounded-b-2xl">
+            
+        <!-- welcome seection    -->
+
+       <div class="max-w-lg mx-auto mt-8 p-3">
+         <h1 class="text-2xl font-bold">🔥 Welcome to Payooo!</h1>
+        <p class=" text-[#08080880]">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+
+       </div>
+
+       <!-- weelcome section hear ende -->
+
+       <!-- icon part start hear  -->
+         
+
+       <div class=" min-h-[200px] grid grid-cols-3 mx-auto mt-5 gap-4 p-3 ">
+            <div class="rounded-lg border-1 border-gray-500  text-center flex flex-col justify-center items-center">
+                <img src="img/wallet1.png" class="mx-auto" alt="">
+                <h2>Add Money</h2>
+
+            </div>
+
+             <div class="rounded-lg border-1 border-gray-500  text-center  flex flex-col justify-center items-center ">
+                <img src="img/send1.png " class="mx-auto" alt="">
+                <h2>Cashout</h2>
+
+            </div>
+
+             <div class="rounded-lg border-1 border-gray-500  text-center  flex flex-col justify-center items-center">
+                <img src="img/money1.png" class="mx-auto" alt="">
+                <h2>Transfer Money</h2>
+
+            </div>
+
+             <div class="rounded-lg border-1 border-gray-500  text-center  flex flex-col justify-center items-center">
+                <img src="img/bonus1.png" class="mx-auto" alt="">
+                <h2>Get Bonus</h2>
+
+            </div>
+
+
+             <div class="rounded-lg border-1 border-gray-500  text-center  flex flex-col justify-center items-center">
+                <img src="img/purse1.png " class="mx-auto" alt="">
+                <h2>Pay Bill</h2>
+            </div>
+             <div class="rounded-lg border-1 border-gray-500  text-center  flex flex-col justify-center items-center">
+                <img src="img/transaction1.png" class="mx-auto" alt="">
+                <h2>Transactions</h2>
+            </div>
+       </div>
+        </div>
+
+        <!-- all form section h ear  -->
+          <div class="all-form-sec  min-h-[50px] max-w-lg mx-auto flex justify-between items-center p-3">
+                <!-- add money  -->
+                <div class="add-money-form w-full">
+                    <h1 class="text-2xl font-semibold my-2">Add Money</h1>
+                    <form action="" class="bg-white rounded-2xl p-4  ">
+                        <div>
+                            <h1 class="font-semibold">Selec a Bank</h1>
+                            </br>
+                            <select id="bank-name" class="select w-full input  rounded-lg">
+                            <option >Pic a Bannk</option>
+                            <option>National Bank</option>
+                            <option>Ific</option>
+                            <option>Islami Bank</option>
+                            </select>
+
+                        
+                        </div>
+
+                         <div>
+                            <label for=""> Bank Account number </label> </br>
+                            <input id="bank-account-num" type="text" placeholder="Enter 11 digit account number " class="input my-3 rounded-lg  w-full" />
+
+                        </div>
+
+                        <div>
+                            <label for="">Amount to Add</label></br>
+                            <input id="add-amount" type="text" placeholder="Add Amount to withdraw" class="input my-3 rounded-lg  w-full" />
+
+                        </div>
+                        <div>
+                            <label for="">Pin Number </label></br>
+                            <input id="pin-number" type="text" placeholder="Enter 4 digit pin number " class="input my-3 rounded-lg  w-full" />
+
+                        </div>
+
+        <button  id="add-money-btn" class="btn bg-[#0874F2] text-white w-full rounded-lg ">Add Money</button>
+
+                    </form>
+
+                </div>
+
+
+
+
+          </div>
+    
+
+
+    <script src="home.js"></script>
+</body>
+</html>
