@@ -25,7 +25,7 @@
             </div>
             <div class="log-out-button">
                 <button class="btn text-[#08080880]"> <i class="fa-solid fa-arrow-right-from-bracket rotate-180 text-gray-700"></i>Log Out</button>
-`
+
             </div>
 
     </div>
@@ -46,13 +46,13 @@
          
 
        <div class=" min-h-[200px] grid grid-cols-3 mx-auto mt-5 gap-4 p-3 ">
-            <div class="rounded-lg border-1 border-gray-500  text-center flex flex-col justify-center items-center">
+            <div id="add-money-box" class="rounded-lg border-1 border-gray-500  text-center flex flex-col justify-center items-center">
                 <img src="img/wallet1.png" class="mx-auto" alt="">
                 <h2>Add Money</h2>
 
             </div>
 
-             <div class="rounded-lg border-1 border-gray-500  text-center  flex flex-col justify-center items-center ">
+             <div id="cash-out-box-id" class="rounded-lg border-1 border-gray-500  text-center  flex flex-col justify-center items-center ">
                 <img src="img/send1.png " class="mx-auto" alt="">
                 <h2>Cashout</h2>
 
@@ -84,8 +84,8 @@
 
         <!-- all form section h ear  -->
           <div class="all-form-sec  min-h-[50px] max-w-lg mx-auto flex justify-between items-center p-3">
-                <!-- add money  -->
-                <div class="add-money-form w-full">
+                <!--cash out  -->
+                <div id="cash-in-form-id" class="add-money-form w-full ">
                     <h1 class="text-2xl font-semibold my-2">Add Money</h1>
                     <form action="" class="bg-white rounded-2xl p-4  ">
                         <div>
@@ -96,9 +96,7 @@
                             <option>National Bank</option>
                             <option>Ific</option>
                             <option>Islami Bank</option>
-                            </select>
-
-                        
+                            </select>                        
                         </div>
 
                          <div>
@@ -123,7 +121,35 @@
                     </form>
 
                 </div>
+                <!-- cashOut stasrt hear -->
+                <div id="cash-out-form-id" class="add-money-form w-full hidden ">
+                    <h1 class="text-2xl font-semibold my-2">Cash Out</h1>
+                    <form action="" class="bg-white rounded-2xl p-4  ">
+                       <div>
+                            <label for="">Agent Number </label> </br>
+                            <input id="agent-number" type="text" placeholder="Enter 11 digit number" class="input my-3 rounded-lg  w-full" />
 
+                        </div>
+
+                        <div>
+                            <label for="">Amount to for Cast out</label></br>
+                            <input id="out-ammount" type="text" placeholder="Enter  your cash out Amount" class="input my-3 rounded-lg  w-full" />
+
+                        </div>
+                        <div>
+                            <label for="">Pin Number </label></br>
+                            <input id="cash-out-pin" type="text" placeholder="Enter 4 digit pin number " class="input my-3 rounded-lg  w-full" />
+
+                        </div>
+
+                <button  id="cash-out-btn" class="btn bg-[#0874F2] text-white w-full rounded-lg ">Cash out Money</button>
+
+                    </form>
+
+                </div>
+
+
+                    <!-- cash out ended hear  -->
 
 
 
